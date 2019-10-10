@@ -1,4 +1,4 @@
-require 'pry'
+
 require 'sinatra/base'
 
 class App < Sinatra::Base
@@ -8,7 +8,6 @@ class App < Sinatra::Base
   end
   
   post '/team' do
-    binding.pry
     erb :team
   end
 
